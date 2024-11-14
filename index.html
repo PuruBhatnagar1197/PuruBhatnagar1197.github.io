@@ -78,6 +78,15 @@
   background-color: #007bff;
   border-color: #007bff;
 }
+ .skills-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  .skill-item {
+    min-width: 150px; /* Adjust as needed */
+  }
 
 /* Additional CSS for Contact Section */
 .contact-section {
@@ -149,10 +158,9 @@ html {
 
 <section id='about' class="about-section">
   <div class="container">
-    <h2>About</h2>
     <img src="images/about/1.jpg" alt="About Me">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet dolor dolor. Suspendisse ligula elit, hendrerit ut bibendum quis, facilisis vitae est. Vivamus vitae felis sit amet sem rhoncus euismod. Praesent commodo lorem porttitor. Nam in condimentum ex. Nam accumsan nisi turpis, sed tempus dolor volutpat non. Proin id enim feugiat ipsum consectetur mattis. Nam blandit venenatis nisi, convallis imperdiet nisi condimentum at.</p>
-    <p>Duis convallis ligula sed pretium tristique. Duis nunc risus, lacinia eget cursus id, suscipit ac metus. Sed varius sed tortor congue aliquam. In in dapibus diam, in auctor purus. Praesent vitae tristique diam. Donec tincidunt hendrerit tortor, vitae lobortis purus rutrum sit amet. Nunc non arcu vitae leo rhoncus tincidunt vel sed urna. Sed sed efficitur dui. Morbi id velit nisi. Fusce luctus placerat purus eu cursus.</p>
+    <p>Hello, I'm Puru Bhatnagar, an experienced Analyst based in Gurgaon, Haryana, India, with over 4 years of expertise in analytics, data science, and advanced problem-solving. I specialize in leveraging data-driven insights to optimize processes, enhance business strategies, and drive growth. My skill set spans SQL, Python, machine learning, data visualization, and predictive analytics, enabling me to provide actionable solutions to complex business problems.</p>
+    <p>I have led impactful initiatives such as automating manual tasks using Python, developing forecasting models, and creating customized analytical tools for operations teams. As a passionate learner, I continuously aim to enhance my skills and contribute to cutting-edge solutions in data science. I'm eager to take on challenging roles where I can drive business impact, optimize processes, and deliver value through my analytics expertise.</p>
   </div>
 </section>
 
@@ -160,17 +168,17 @@ html {
 <!-- Projects Section -->
 <section id="projects" class="projects-section bg-light" id="projects">
   <div class="container">
-    <h2 class="text-center">Projects</h2>
+    <h2 class="text-center"> Perosnal Projects</h2>
     <div class="row">
       <!-- Project 1 -->
       <div class="col-md-4 mb-4">
         <div class="card">
           <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
           <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-primary">Blog Post</a>
-            <a href="#" class="btn btn-secondary">Source Code</a>
+            <h5 class="card-title">Playlist Generator</h5>
+            <p class="card-text">The Playlist Recommender is a Streamlit application that recommends 5 songs for your playlist and has two modes of taking inputs.</p>
+            <a href="https://www.linkedin.com/pulse/playlist-recommender-puru-bhatnagar-ef9mc/?trackingId=IFBSfLtwTls3ZaO8%2B80EPg%3D%3D" class="btn btn-primary">Blog Post</a>
+            <a href="https://github.com/PuruBhatnagar1197/playlist-generator" class="btn btn-primary", target="blank">Source Code</a>
           </div>
         </div>
       </div>
@@ -179,10 +187,10 @@ html {
         <div class="card">
           <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
           <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-primary">Blog Post</a>
-            <a href="#" class="btn btn-secondary">Source Code</a>
+            <h5 class="card-title">Movie Multiclass classification</h5>
+            <p class="card-text">Worked on a multiclass class classification problem imdb movie dataset was used to implement the concept. The project was implement using Python.</p>
+            <!-- <a href="#" class="btn btn-primary">Blog Post</a> -->
+            <a href="https://github.com/PuruBhatnagar1197/Movie-multiclass-classification/blob/main/Movie_multiclass_classification.ipynb" class="btn btn-primary", target="blank">Source Code</a>
           </div>
         </div>
       </div>
@@ -191,10 +199,10 @@ html {
         <div class="card">
           <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
           <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
-            <a href="#" class="btn btn-primary">Blog Post</a>
-            <a href="#" class="btn btn-secondary">Source Code</a>
+            <h5 class="card-title">Book Recommender</h5>
+            <p class="card-text">Build a Recommending engine using a collaborative and popularity based algorithm. Different clusteirng algo were tested</p>
+            <!-- <a href="#" class="btn btn-primary">Blog Post</a> -->
+            <a href="https://github.com/PuruBhatnagar1197/Book-recommender-using-Collaborative-and-Popularity-based-algo/blob/main/Book%20recommendation.ipynb" class="btn btn-primary", target="blank">Source Code</a>
           </div>
         </div>
       </div>
@@ -203,14 +211,70 @@ html {
   </div>
 </section>
 
+<br>
+<section id="skills" class="skills-section bg-white">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="skills-container d-flex overflow-auto">
+      <!-- Skill 1 -->
+      <div class="skill-item text-center mx-3">
+        <strong>Python</strong>
+        <div>⭐⭐⭐⭐⭐</div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="skill-item text-center mx-3">
+        <strong>SQL</strong>
+        <div>⭐⭐⭐⭐⭐</div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="skill-item text-center mx-3">
+        <strong>MS Excel</strong>
+        <div>⭐⭐⭐⭐</div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="skill-item text-center mx-3">
+        <strong>Tibco Spotfire</strong>
+        <div>⭐⭐⭐⭐</div>
+      </div>
+      <!-- Skill 5 -->
+      <div class="skill-item text-center mx-3">
+        <strong>Palantir Foundry</strong>
+        <div>⭐⭐⭐⭐</div>
+      </div>
+      <!-- Skill 6 -->
+      <div class="skill-item text-center mx-3">
+        <strong>Data Visualization (Plotly/Seaborn)</strong>
+        <div>⭐⭐⭐⭐</div>
+      </div>
+      <!-- Skill 7 -->
+      <div class="skill-item text-center mx-3">
+        <strong>Machine Learning</strong>
+        <div>⭐⭐⭐⭐</div>
+      </div>
+      <!-- Skill 8 -->
+      <div class="skill-item text-center mx-3">
+        <strong>NLP</strong>
+        <div>⭐⭐⭐</div>
+      </div>
+      <!-- Skill 9 -->
+      <div class="skill-item text-center mx-3">
+        <strong>Streamlit</strong>
+        <div>⭐⭐⭐⭐</div>
+      </div>
+      <!-- Add more skills as needed -->
+    </div>
+  </div>
+</section>
+
+
 
 <!-- Skills Section -->
-<section id="skills" class="skills-section bg-white" id="skills">
+<!-- <section id="skills" class="skills-section bg-white" id="skills">
   <div class="container">
     <h2 class="text-center">Skills</h2>
     <div class="row">
       <!-- Skill 1 -->
-      <div class="col-lg-3 col-md-6 mb-4">
+      <!---<div class="col-lg-3 col-md-6 mb-4">
         <div class="card">
           <img src="images/skills/1.png" class="card-img-top" alt="Python">
           <div class="card-body">
@@ -221,7 +285,7 @@ html {
         </div>
       </div>
       <!-- Skill 2 -->
-      <div class="col-lg-3 col-md-6 mb-4">
+     <!-- <div class="col-lg-3 col-md-6 mb-4">
         <div class="card">
           <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
           <div class="card-body">
@@ -232,7 +296,7 @@ html {
         </div>
       </div>
       <!-- Skill 3 -->
-      <div class="col-lg-3 col-md-6 mb-4">
+    <!--  <div class="col-lg-3 col-md-6 mb-4">
         <div class="card">
           <img src="images/skills/3.png" class="card-img-top" alt="SQL">
           <div class="card-body">
@@ -243,7 +307,7 @@ html {
         </div>
       </div>
       <!-- Skill 4 -->
-      <div class="col-lg-3 col-md-6 mb-4">
+    <!--  <div class="col-lg-3 col-md-6 mb-4">
         <div class="card">
           <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
           <div class="card-body">
@@ -256,50 +320,50 @@ html {
     </div>
   </div>
 </section>
+ -->
+ 
+<Br>
+<Br>
+<Br>
+<Br>
 
+ 
 <!-- Contact Me Section -->
 <section id="contact" class="contact-section text-center text-white bg-dark">
   <div class="container">
     <h2>Contact Me</h2>
     <div class="row">
       <div class="col-lg-6">
-        <p><i class="fas fa-envelope"></i> loremipsum@gmail.com</p>
+        <p><i class="fas fa-envelope"></i> bhatnagar.puru1197@gmail.com</p>
       </div>
       <div class="col-lg-6">
-        <p><i class="fas fa-phone"></i> 415xxxxxxx</p>
+        <p><i class="fas fa-phone"></i> +91 8755042309</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://linkedin.com/in/yourusername" target="_blank">
-          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
-          LinkedIn
-        </a>
+    <div class="row" >
+       <div class="col-lg-2 col-md-4 mb-4">
+        
       </div>
+	  <div class="col-lg-2 col-md-4 mb-4">
+      </div>  
       <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://twitter.com/yourusername" target="_blank">
-          <img src="icons/twitter.png" alt="Twitter" class="social-icon">
-          Twitter
-        </a>
-      </div>
-      <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://github.com/yourusername" target="_blank">
+        <a href="https://github.com/PuruBhatnagar1197" target="_blank">
           <img src="icons/github.png" alt="GitHub" class="social-icon">
           GitHub
         </a>
       </div>
       <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://medium.com/@yourusername" target="_blank">
-          <img src="icons/medium.png" alt="Medium" class="social-icon">
-          Medium
+        <a href="https://www.linkedin.com/in/puru-bhatnagar" target="_blank">
+          <img src="icons/linkedin.png" alt="Linkedin" class="social-icon">
+          Linkedin
         </a>
       </div>
-      <div class="col-lg-2 col-md-4 mb-4">
+<!--       <div class="col-lg-2 col-md-4 mb-4">
         <a href="https://youtube.com/c/yourchannel" target="_blank">
           <img src="icons/youtube.png" alt="YouTube" class="social-icon">
           YouTube
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
